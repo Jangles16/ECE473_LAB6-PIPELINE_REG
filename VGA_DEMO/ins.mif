@@ -1,20 +1,34 @@
-DEPTH = 64;                   -- The size of memory in words
-WIDTH = 32;                    -- The size of data in bits
-ADDRESS_RADIX = HEX;          -- The radix for address values
-DATA_RADIX = HEX;             -- The radix for data values
-CONTENT                       -- start of (address : data pairs)
-BEGIN
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Intel and sold by Intel or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
 
-00 : 00411820;                -- memory address : data
-01 : 00411821;
-02 : 00411822;
-03 : 00411823;
-04 : 00411824;
-05 : 00411825;
-06 : 00411827;
-07 : 0041182A;
-08 : 00021842;
-09 : 00021842;
-0A : 00400008;
-0B : 00000000;
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=64;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	00  :   0001A020;
+	01  :   0043A820;
+	02  :   0085B020;
+	03  :   00C7B020;
+	04  :   0109B820;
+	05  :   014BC020;
+	06  :   018DC820;
+	07  :   01CFD020;
+	[08..3F]  :   00000000;
 END;
