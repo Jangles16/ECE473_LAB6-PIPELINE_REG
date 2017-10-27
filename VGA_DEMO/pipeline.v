@@ -13,9 +13,9 @@ module pipeline (
 	
 	
 	always @(posedge clock) begin
-		data_out_D1=data_out_D1;
-		data_out_D2=data_out_D2;
-		data_out_RD=data_out_RD;
+		data_out_D1<=data_in_D1;
+		data_out_D2<=data_in_D2;
+		data_out_RD<=data_in_RD;
 			
 	end
 		

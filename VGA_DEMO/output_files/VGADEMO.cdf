@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/Josh Andrews/Desktop/ECE 473/Lab 5/ECE473-LAB5-VGARegfile/VGA_DEMO/output_files/") File("VGADEMO.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/Josh Andrews/Desktop/ECE 473/Lab 6/ECE473_LAB6-PIPELINE_REG/VGA_DEMO/output_files/") File("VGADEMO.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

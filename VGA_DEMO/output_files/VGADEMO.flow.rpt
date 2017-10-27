@@ -1,5 +1,5 @@
 Flow report for VGADEMO
-Thu Oct 26 11:21:40 2017
+Thu Oct 26 16:07:39 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -38,24 +38,29 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Thu Oct 26 11:21:40 2017       ;
-; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name               ; VGADEMO                                     ;
-; Top-level Entity Name       ; VGADEMO                                     ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CEBA4F23C7                                 ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Oct 26 16:07:20 2017       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; VGADEMO                                     ;
+; Top-level Entity Name           ; VGADEMO                                     ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 1,929 / 18,480 ( 10 % )                     ;
+; Total registers                 ; 2419                                        ;
+; Total pins                      ; 16 / 224 ( 7 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 311,296 / 3,153,920 ( 10 % )                ;
+; Total DSP Blocks                ; 1 / 66 ( 2 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/26/2017 11:21:23 ;
+; Start date & time ; 10/26/2017 16:04:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGADEMO             ;
 +-------------------+---------------------+
@@ -74,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 251408596617601.150903128314444        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 251408596617601.150904825716332        ; --            ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -100,29 +105,38 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:18     ; 1.0                     ; 763 MB              ; 00:00:37                           ;
-; Total                  ; 00:00:18     ; --                      ; --                  ; 00:00:37                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 791 MB              ; 00:00:42                           ;
+; Fitter                    ; 00:02:28     ; 1.1                     ; 1908 MB             ; 00:04:52                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 734 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.5                     ; 1016 MB             ; 00:00:26                           ;
+; Total                     ; 00:03:15     ; --                      ; --                  ; 00:06:06                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; JOSH-PRIMARY     ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; JOSH-PRIMARY     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; JOSH-PRIMARY     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; JOSH-PRIMARY     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; JOSH-PRIMARY     ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off VGADEMO -c VGADEMO --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off VGADEMO -c VGADEMO
+quartus_fit --read_settings_files=off --write_settings_files=off VGADEMO -c VGADEMO
+quartus_asm --read_settings_files=off --write_settings_files=off VGADEMO -c VGADEMO
+quartus_sta VGADEMO -c VGADEMO
 
 
 
