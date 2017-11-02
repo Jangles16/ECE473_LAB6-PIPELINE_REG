@@ -705,21 +705,21 @@ agreement for further details.
 		(pt 296 32)
 		(output)
 		(text "data_out_1[31..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "data_out_1[31..0]" (rect 203 27 275 39)(font "Arial" ))
+		(text "data_out_1[31..0]" (rect 203 27 289 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(port
 		(pt 296 48)
 		(output)
 		(text "data_out_2[31..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "data_out_2[31..0]" (rect 203 43 275 55)(font "Arial" ))
+		(text "data_out_2[31..0]" (rect 203 43 289 55)(font "Arial" ))
 		(line (pt 296 48)(pt 280 48)(line_width 3))
 	)
 	(port
 		(pt 296 64)
 		(output)
 		(text "data_out_debug[31..0]" (rect 0 0 109 12)(font "Arial" ))
-		(text "data_out_debug[31..0]" (rect 183 59 275 71)(font "Arial" ))
+		(text "data_out_debug[31..0]" (rect 183 59 292 71)(font "Arial" ))
 		(line (pt 296 64)(pt 280 64)(line_width 3))
 	)
 	(drawing
@@ -991,7 +991,7 @@ agreement for further details.
 		(pt 152 32)
 		(output)
 		(text "pc[31..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "pc[31..0]" (rect 95 27 131 39)(font "Arial" ))
+		(text "pc[31..0]" (rect 95 27 138 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(drawing
@@ -999,7 +999,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 2576 216 2760 296)
+	(rect 2584 216 2768 296)
 	(text "add" (rect 5 0 22 12)(font "Arial" ))
 	(text "inst16" (rect 8 64 37 76)(font "Arial" ))
 	(port
@@ -1020,7 +1020,7 @@ agreement for further details.
 		(pt 184 32)
 		(output)
 		(text "out[31..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "out[31..0]" (rect 124 27 163 39)(font "Arial" ))
+		(text "out[31..0]" (rect 124 27 171 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
@@ -1118,16 +1118,6 @@ agreement for further details.
 	(text "d[31..0]" (rect 2096 264 2131 281)(font "Intel Clear" ))
 	(pt 2088 280)
 	(pt 2136 280)
-	(bus)
-)
-(connector
-	(pt 2496 248)
-	(pt 2576 248)
-	(bus)
-)
-(connector
-	(pt 2496 264)
-	(pt 2576 264)
 	(bus)
 )
 (connector
@@ -1381,16 +1371,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2792 248)
-	(pt 2792 264)
-	(bus)
-)
-(connector
-	(pt 2760 248)
-	(pt 2792 248)
-	(bus)
-)
-(connector
 	(pt 1760 376)
 	(pt 1760 384)
 	(bus)
@@ -1457,6 +1437,31 @@ agreement for further details.
 	(text "RD[4..0]" (rect 3272 272 3289 309)(font "Intel Clear" )(vertical))
 	(pt 3288 280)
 	(pt 3288 320)
+	(bus)
+)
+(connector
+	(pt 2792 264)
+	(pt 2792 248)
+	(bus)
+)
+(connector
+	(pt 2792 248)
+	(pt 2768 248)
+	(bus)
+)
+(connector
+	(pt 2496 248)
+	(pt 2584 248)
+	(bus)
+)
+(connector
+	(pt 2496 264)
+	(pt 2584 264)
+	(bus)
+)
+(connector
+	(pt 344 128)
+	(pt 336 128)
 	(bus)
 )
 (junction (pt 208 472))
